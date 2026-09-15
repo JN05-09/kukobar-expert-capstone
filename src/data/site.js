@@ -30,10 +30,10 @@ export const technicians = [
 ]
 
 export const contact = {
-  address: 'Pagsanjan, Laguna',
-  email: 'hello@kukobarnail.com',
-  phone: '+1 (555) 010-0246',
-  phoneHref: 'tel:+15550100246',
+  address: 'CLA Areza Town Center Mall, Pagsanjan, Laguna, 4008',
+  email: 'glaixyxian@gmail.com',
+  phone: '0936 184 9300',
+  phoneHref: 'tel:09361849300',
   facebook: '#facebook',
 }
 
