@@ -45,10 +45,6 @@ export default function HeroSection() {
                     loading="lazy"
                   />
                 ) : null}
-                <span className="" />
-                <span className="" />
-                <span className="" />
-                <span className="" />
               </div>
               <div className="floating-card">
                 <div className="fc-rating">

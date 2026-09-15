@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap'
-import kukoLogo from '../../../icon/KukoBar_logo.jpg'
+import kukoLogo from '../../../icon/KukoBar_badge.png'
 import { navItems, contact, storeHours } from '../../../data/site'
 
 export default function FooterSection() {

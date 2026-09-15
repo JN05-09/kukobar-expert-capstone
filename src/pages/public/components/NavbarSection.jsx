@@ -1,5 +1,5 @@
 import { Container, Navbar, Nav } from 'react-bootstrap'
-import kukoLogo from '../../../icon/KukoBar_logo.jpg'
+import kukoLogo from '../../../icon/KukoBar_badge.png'
 import { navItems } from '../../../data/site'
 
 export default function NavbarSection() {

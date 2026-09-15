@@ -98,15 +98,14 @@ h1, h2, h3, .brand-name {
   color: var(--kuko-dark-green);
 }
 .brand-name .brand-logo {
-  height: 30px;
-  width: auto;
-  border-radius: 6px;
-}
-.brand-name .brand-star,
-.footer-brand .brand-star {
-  color: var(--kuko-green);
-  font-size: 0.85rem;
-  margin-right: 0.35rem;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  background: #fff;
+  padding: 3px;
+  border-radius: 3px;
+  box-shadow: 0 1px 6px rgba(13, 83, 14, 0.10);
 }
 .kuko-nav .nav-link {
   font-weight: 500;
@@ -315,55 +314,6 @@ h1, h2, h3, .brand-name {
   display: block;
   pointer-events: none;
 }
-.nail-shape {
-  position: absolute;
-  border-radius: 50% 50% 46% 46%;
-  background: linear-gradient(150deg, #437a3a 0%, #0D530E 100%);
-}
-.nail-shape::after {
-  content: '';
-  position: absolute;
-  left: 16%;
-  top: 14%;
-  width: 38%;
-  height: 62%;
-  border-radius: 50%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.35), transparent 70%);
-}
-.nail-big {
-  width: 132px;
-  height: 176px;
-  right: 12%;
-  top: 14%;
-}
-.nail-small {
-  width: 82px;
-  height: 110px;
-  left: 10%;
-  bottom: 12%;
-  background: linear-gradient(150deg, #BDBB88 0%, #8A8A56 100%);
-}
-.nail-small::after {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), transparent 70%);
-}
-.hero-visual__ring {
-  position: absolute;
-  left: 18%;
-  top: 16%;
-  width: 92px;
-  height: 92px;
-  border-radius: 50%;
-  border: 2px solid rgba(13, 83, 14, 0.14);
-}
-.hero-visual__dot {
-  position: absolute;
-  right: 16%;
-  bottom: 18%;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: rgba(48, 109, 41, 0.35);
-}
 .floating-card {
   position: absolute;
   left: 0;
@@ -431,58 +381,11 @@ h1, h2, h3, .brand-name {
   display: block;
 }
 
-/* Design card tints + nail glyph */
+/* Design card tints */
 .dg-classic { background: linear-gradient(135deg, #E7E1B1 0%, #EFE9C8 100%); }
 .dg-french  { background: linear-gradient(135deg, #DDE5C9 0%, #EFE9C8 100%); }
 .dg-gel     { background: linear-gradient(135deg, #C8DCC9 0%, #EFE9C8 100%); }
 .dg-creative{ background: linear-gradient(135deg, #EBDFC6 0%, #EFE9C8 100%); }
-
-.nail-glyph {
-  width: 46px;
-  height: 60px;
-  border-radius: 50% 50% 44% 44%;
-  background: linear-gradient(150deg, #437a3a 0%, #0D530E 100%);
-  box-shadow: 0 6px 16px rgba(13, 83, 14, 0.18);
-  position: relative;
-}
-.nail-glyph::after {
-  content: '';
-  position: absolute;
-  left: 22%;
-  top: 12%;
-  width: 40%;
-  height: 60%;
-  border-radius: 50%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4), transparent 70%);
-}
-.nail-glyph--tip {
-  width: 46px;
-  height: 60px;
-  border-radius: 50% 50% 44% 44%;
-  background: var(--kuko-green);
-  position: relative;
-  box-shadow: 0 6px 16px rgba(48, 109, 41, 0.2);
-}
-.nail-glyph--tip::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 34%;
-  border-radius: 0 0 50% 50%;
-  background: var(--kuko-cream);
-}
-.nail-glyph--tip::after {
-  content: '';
-  position: absolute;
-  left: 22%;
-  top: 12%;
-  width: 40%;
-  height: 45%;
-  border-radius: 50%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.35), transparent 70%);
-}
 
 /* ---------- Services ---------- */
 .services-section {
@@ -585,11 +488,14 @@ h1, h2, h3, .brand-name {
 }
 .footer-brand .brand-logo,
 .brand-logo--footer {
-  height: 24px;
-  width: auto;
-  border-radius: 5px;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  background: #fff;
+  padding: 3px;
+  border-radius: 3px;
 }
-.footer-brand .brand-star { color: var(--kuko-sand); }
 .footer-brand-desc {
   font-size: 0.88rem;
   line-height: 1.6;
@@ -692,9 +598,4 @@ h1, h2, h3, .brand-name {
   border: none;
   border-top: 1px solid rgba(251, 245, 221, 0.10);
   margin: 1.5rem 0 1.25rem;
-}
-.footer-copy {
-  font-size: 0.8rem;
-  color: rgba(251, 245, 221, 0.45);
-  margin: 0;
 }
